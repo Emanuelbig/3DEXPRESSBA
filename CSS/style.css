@@ -49,7 +49,7 @@ body {
 .subcontainer {
 
     display: flex;
-  align-items: center;
+    align-items: center;
 
 }
 
@@ -160,5 +160,30 @@ body {
     height: 450px;
     background-color: hsl(0, 0%, 45%);
     color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
 }
 
+
+
+/* le pones en un div el iframe y el otro la div que contenga contacto... entonces le haces un container fluid, otra div row y a lo que contenga contacto y iframe le pones una clase col-6 */
+
+
+li {
+    list-style-type: none;
+}
+/* .subcontainer2 {
+
+    display: flex;
+    align-items: center;
+
+
+
+}     */
+
+.hipervinculocontacto {
+   
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+      
+}
