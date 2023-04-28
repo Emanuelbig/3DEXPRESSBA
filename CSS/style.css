@@ -46,6 +46,20 @@ body {
 
 } 
 
+.subcontainer {
+
+    display: flex;
+  align-items: center;
+
+}
+
+.custom-margin-top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
 .parte2img {
     float: right;
     margin-left: 20px;
@@ -116,8 +130,15 @@ body {
     height: 300px;
 }
 
+.franjametodo 
+
+.metodo {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+}
+
 .seccion3 {
-   padding-top: 0px;
+   padding-top: 40px;
    padding-bottom: 60px;
 }
 
