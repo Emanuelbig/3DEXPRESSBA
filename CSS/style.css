@@ -1,34 +1,70 @@
+
+header {
+    background-color: hsl(216, 85%, 39%);
+    height: 30px;
+    text-align:start;
+    /* padding: 4px;  */
+
+}
+
+.contactinfo {
+
+    color: hsl(0, 0%, 100%);
+}
+
+nav {
+    /* background-color: hsl(34, 100%, 64%); */
+    text-align: center;
+
+}
+
 body {
     background-color: hsl(62, 87%, 94%);
     
 }
 
-header {
-    background-color: hsl(34, 100%, 79%);
-    height: 50px;
-    text-align: center;
-    padding: 4px;
-}
-
-nav {
-    background-color: hsl(34, 100%, 64%);
-    text-align: center;
-
-}
-
-section {
+/* section {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    gap: 20px ;
+     justify-content:center; 
+    gap: 0px ;
+
+} */
+
+.servicetitled {
+    padding-top: 30px;
 
 }
 
+ .seccion2 {
+
+    display:flexbox;
+    /* flex-direction: row; */
+    /* justify-content:space-between; */
+    /* gap: 20px ;  */
+    /* overflow:visible; */
+
+} 
+
+.parte2img {
+    float: right;
+    margin-left: 20px;
+  } 
+
+.parte2blabla {
+    float: left;
+    text-align: right;
+   
+
+}   
+
+
 .footer1 {
-    background-color: hsl(0, 0%, 76%);
+    background-color: hsl(216, 98%, 52%);
     font-size: 30px;
     padding: 10px;
     text-align: center;
+    color: hsl(0, 0%, 100%);
 
 }
 
@@ -47,7 +83,61 @@ section {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-h2 {
-    text-align: center;
+.contenedorbox1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.box1 {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px; 
+    /* background-color: rgb(226, 43, 83); */
+    /* border: 1px solid black; */
+    
+        /* width: 50%;
+        float: left;
+        height: 100px;
+        align-items: center;
+        
+        text-align: center; */
+
+}
+
+
+
+.imagenbox {
+    width: 300px;
+    height: 300px;
+}
+
+.seccion3 {
+   padding-top: 0px;
+   padding-bottom: 60px;
+}
+
+/* dasdas */
+
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    padding-top: 50px;
+    
+}
+
+
+.box {
+    width: 50%;
+    float: left;
+    height: 450px;
+    background-color: hsl(0, 0%, 45%);
+    color: rgb(255, 255, 255);
 }
 
