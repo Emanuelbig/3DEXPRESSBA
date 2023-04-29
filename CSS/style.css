@@ -190,7 +190,7 @@ li {
       
 }
 
-.whatlook, .textstore {
+.whatlook, .textstore, .acerca, .confidencialidad, .gif {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -201,4 +201,10 @@ li {
     top: 30px;
     margin-right: 50px;
 
+}
+
+.recortevertical {
+
+    clip-path: rect(0px, 100px, 0px, auto);
+    
 }
