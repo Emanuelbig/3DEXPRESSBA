@@ -50,8 +50,11 @@ body {
 
     display: flex;
     align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
 }
+
 
 
 
@@ -208,3 +211,20 @@ li {
     clip-path: rect(0px, 100px, 0px, auto);
     
 }
+
+.confidencialidad {
+
+    background-color: hsl(0, 0%, 82%);
+    color: hsl(0, 0%, 7%);
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
+.tituloconfidencial {
+   display: flex;
+   justify-content: start;
+
+}
+
+
+
