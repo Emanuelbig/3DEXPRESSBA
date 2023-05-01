@@ -50,8 +50,35 @@ body {
 
     display: flex;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    
+
+    
+
+
+}
+
+.acuerdo {
+    padding-top: 172px;
+    /* margin-left: 172px;
+    margin-right: 200px; */
+}
+
+.conficencialtitulo {
+
+    margin-left: 172px;
+    margin-right: 70px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+
+
+}
+
+.imagenconfi {
+
+    padding-top: 50px;
+
 
 }
 
@@ -217,7 +244,16 @@ li {
     background-color: hsl(0, 0%, 82%);
     color: hsl(0, 0%, 7%);
     margin-top: 100px;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
+    
+}
+
+.confidencialidad h3 p {
+
+    margin-left: 20px;
+    margin-right: 20px; 
+    
+
 }
 
 .tituloconfidencial {
@@ -225,6 +261,8 @@ li {
    justify-content: start;
 
 }
+
+
 
 
 
