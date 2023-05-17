@@ -1,220 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <!-- git init (crea la carpeta git en la carpeta, lo inicia) -->
+    <!-- git status (Verifica el estado de nuestro repositorio) -->
+    <!-- git add index.html (agrega ese archivo al estado staged) -->
+    <!-- git add . (agrega todos los archivos nuevos y modificados) -->
+    <!-- git status (Verificas que el archivo  paso a staged) -->
+    <!-- git commit -m "inicio del proyecto" (confirma los cambios del área de stage y los guarda en el
+         repositorio, Es
+        muy importante que los mensajes sean lo suficientemente descriptivos como para que
+        si el día de mañana revisamos la historia de nuestro repositorio sepamos donde se hizo
+        cada cambio o conjunto de cambios.) -->
+    <!-- git status (Si hiciste bien los pasos te dice que el ambiente de trabajo esta listo) -->
+    <!-- git log (Revisa el historial de nuestro repositorio) -->
+    <!-- git commit -am "Probando el commit" (agrega al área de stage y guarda los cambios de todos los
+        archivos ya trackeados que hayamos modificado. ) -->
+    <!-- git remote add origin https://github.com/Emanuelbig/Trabajo-Final-BAMultiplica2.0- (especifico en donde se subira)  -->
+    <!-- git push -u origin master (lo sube al repositorio remoto)  -->
+    <!-- git pull (Trae archivos desde el repositorio remoto) -->
+    <!-- git clone https://github.com/Emanuelbig/Trabajo-Final-BAMultiplica2.0- ( si creas una carpeta en otra compu y creas un archivo podes llamar todo el proyecto a esta nueva computadora) -->
 
-    <!-- favicon -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D Express</title>
 
-    <link rel="icon" href="IMG/favicon.ico">
-    <link rel="apple-touch-icon" href="IMG/favicon.ico">
+        <!-- favicon -->
 
-    <!-- CSS y Bootstrap -->
+        <link rel="icon" href="IMG/favicon.ico">
+        <link rel="apple-touch-icon" href="IMG/favicon.ico">
 
-    <link rel="stylesheet" href="CSS/style.css">
+        <!-- Reset CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/reset.css">
 
-    <!-- Metaetiquetas de posicionamiento -->
+        <!-- CSS y Bootstrap -->
+        
+        <link rel="stylesheet" href="CSS/style.css">
 
-    <meta property="og:title" content="Impresión 3D">
-    <meta property="og:description" content="Hacemos el servicio de Impresión 3D más rápido de C.A.B.A.">
-    <meta property="og:type" content="Pagina Web">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta name="twitter:card" content="Impresión 3D"> 
-    <meta name="twitter:site" content="@impresion3D">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-</head>
-<body>
+        <!-- Tipo for name company -->
 
-    <!-- Header  (en algun momento podria fusionar el header con nav y usar fixed-top para que siempre este presente cuando se scrollea la pag)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
-    <header class="m-0">
-        <div>
-            <p class="contactinfo">📞 +54 9 11 3316 8094  |  📧 3dexpress.ba@gmail.com</p>
+        <!-- Metaetiquetas de posicionamiento -->
 
-        </div>
-         
+        <meta property="og:title" content="Impresión 3D">
+        <meta property="og:description" content="Hacemos el servicio de Impresión 3D más rápido de C.A.B.A.">
+        <meta property="og:type" content="Pagina Web">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta name="twitter:card" content="Impresión 3D"> 
+        <meta name="twitter:site" content="@impresion3D">
 
-    </header>
+    </head>
 
-    <!-- Navbar -->
+    <body>
 
-    <nav class="">
+        <!-- Header con navbar -->
+
+        <header class=" fixed-top">
+
+            <div class="row text-start text-white mt-2 mb-2 ">
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+
+                    <p class="contactinfo">📞 +54 9 11 3316 8094</p>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+
+                    <p class="contactinfo">📧 3dexpress.ba@gmail.com</p>
+
+                </div>
+
+            </div>
+
             
-      <div class=" bg-primary ">
 
-          <div class="container justify-content-center">
-  
-              <nav class="navbar navbar-expand-lg navbar-dark ">
-  
-                  <div class="container-fluid">
-  
-                    <a class="navbar-brand" href="index.html">3D Express (logo)</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
-                        
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Contacto</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link disable" aria-current="page" href="#" disable>Blog</a>
-                        </li>
-                        
-                      </ul>
-                      
-                    </div>
-                  </div>
-                </nav>
-  
-      </div>
-
-  </nav>
-
-    <!-- Select 
-
-    <select name="orderby" id="selecter">
-
-      <option value="menuorder" selected+="selected" >Orden por defecto</option>
-
-    </select> -->
-
-    <div class="dropdown ">
-      <button class="btn bg-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
-        <button class="dropdown-item" type="button">Action</button>
-        <button class="dropdown-item" type="button">Another action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
-      </div>
-    </div>
-
-    <!-- Store -->
-
-    <div class="m-5">
-
-        <div>
-
-          <H2 class="textstore text-center"> Store </H2>
-
-        </div>
-
-        <div class="row mb-4 mt-4">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">Product description 1</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Product description 2</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Product description 3</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 4</h5>
-                <p class="card-text">Product description 4</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 5</h5>
-                <p class="card-text">Product description 5</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="IMG/frame 4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Product 6</h5>
-                <p class="card-text">Product description 6</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
+              <nav class="nav3d">
+                  
+                  <div class=" bg-primary ">
+            
+                      <div class="container justify-content-center">
               
+                          <nav class="navbar navbar-expand-lg navbar-dark ">
+              
+                              <div class="container-fluid ">
+              
+                                <a class="navbar-brand" href="index.html" style="font-family: 'Kanit', sans-serif;">3D Express</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav ms-auto mb-0 mb-lg-0 text-start">
+                                    
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
+                                    </li>
+              
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
+                                    </li>
+              
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                                    </li>
+              
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="index.html">Contacto</a>
+                                    </li>
+            
+                                    <li class="nav-item">
+                                      <a class="nav-link disable" aria-current="page" href="#" disable>Blog</a>
+                                    </li>
+                                    
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+                            </nav>
+              
+                  </div>
+            
+              </nav>
+
+            
+
+
+        </header>
+        
+        <!-- another dropdown -->
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            que quere comprah
+            </button>
+            <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+            </ul>
+        </div>
+
+        <!-- Store -->
+
+        <div class="m-5 store">
+
+            <div>
+
+            <H2 class="textstore text-center "> Store </H2>
+
+            </div>
+
+            <div class="row mb-4 mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Product description 1</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <p class="card-text">Product description 2</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product 3</h5>
+                    <p class="card-text">Product description 3</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product 4</h5>
+                    <p class="card-text">Product description 4</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product 5</h5>
+                    <p class="card-text">Product description 5</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="IMG/frame 4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 6</h5>
+                            <p class="card-text">Product description 6</p>
+                            <a href="#" class="btn btn-primary">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
 
 
         </div>
 
 
-      </div>
+        </div>
 
-      <div>
-        <h2 class="whatlook text-center">
-          <span>
-            ¿Buscás algo especifico? Consultanos a 3dexpress.ba@gmail.com
-          </span>
-        </h2>
-      </div>
-    
-    
-    
-    
-    <footer class="footer1">
         <div>
-            <p>© 2023 | Todos los derechos reservados</p>
-            <p class="writtenby">Hecho por Emanuel Morano Solé</p>
+            <h2 class="whatlook text-center">
+                <span>
+                    ¿Buscás algo especifico? Consultanos a 3dexpress.ba@gmail.com
+                </span>
+            </h2>
         </div>
 
-    </footer>
+        <!-- My footer -->
+
+        <footer class="footer1 row overflow-x-hidden">
+
+            <div>
+                <p>© 2023 | Todos los derechos reservados</p>
+                <p class="writtenby">Hecho por Emanuel Morano Solé</p>
+            </div>
+  
+        </footer>        
 
 
+        
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    
-</body>
-</html>
+        <!-- Javascript de Bootstrap y propio -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <script src="JS/script.js"></script>
+
+    </body>

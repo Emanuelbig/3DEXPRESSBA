@@ -1,190 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa</title>
+    <!-- git init (crea la carpeta git en la carpeta, lo inicia) -->
+    <!-- git status (Verifica el estado de nuestro repositorio) -->
+    <!-- git add index.html (agrega ese archivo al estado staged) -->
+    <!-- git add . (agrega todos los archivos nuevos y modificados) -->
+    <!-- git status (Verificas que el archivo  paso a staged) -->
+    <!-- git commit -m "inicio del proyecto" (confirma los cambios del área de stage y los guarda en el
+         repositorio, Es
+        muy importante que los mensajes sean lo suficientemente descriptivos como para que
+        si el día de mañana revisamos la historia de nuestro repositorio sepamos donde se hizo
+        cada cambio o conjunto de cambios.) -->
+    <!-- git status (Si hiciste bien los pasos te dice que el ambiente de trabajo esta listo) -->
+    <!-- git log (Revisa el historial de nuestro repositorio) -->
+    <!-- git commit -am "Probando el commit" (agrega al área de stage y guarda los cambios de todos los
+        archivos ya trackeados que hayamos modificado. ) -->
+    <!-- git remote add origin https://github.com/Emanuelbig/Trabajo-Final-BAMultiplica2.0- (especifico en donde se subira)  -->
+    <!-- git push -u origin master (lo sube al repositorio remoto)  -->
+    <!-- git pull (Trae archivos desde el repositorio remoto) -->
+    <!-- git clone https://github.com/Emanuelbig/Trabajo-Final-BAMultiplica2.0- ( si creas una carpeta en otra compu y creas un archivo podes llamar todo el proyecto a esta nueva computadora) -->
 
-    <!-- favicon -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D Express</title>
 
-    <link rel="icon" href="IMG/favicon.ico">
-    <link rel="apple-touch-icon" href="IMG/favicon.ico">
+        <!-- favicon -->
 
-    <!-- CSS y Bootstrap -->
+        <link rel="icon" href="IMG/favicon.ico">
+        <link rel="apple-touch-icon" href="IMG/favicon.ico">
 
-    <link rel="stylesheet" href="CSS/style.css">
+        <!-- Reset CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/reset.css">
 
-     <!-- Metaetiquetas de posicionamiento -->
+        <!-- CSS y Bootstrap -->
+        
+        <link rel="stylesheet" href="CSS/style.css">
 
-     <meta property="og:title" content="Impresión 3D">
-     <meta property="og:description" content="Hacemos el servicio de Impresión 3D más rápido de C.A.B.A.">
-     <meta property="og:type" content="Pagina Web">
-     <meta property="og:image" content="">
-     <meta property="og:url" content="">
-     <meta name="twitter:card" content="Impresión 3D"> 
-     <meta name="twitter:site" content="@impresion3D">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-</head>
-<body>
+        <!-- Tipo for name company -->
 
-    <!-- Header  (en algun momento podria fusionar el header con nav y usar fixed-top para que siempre este presente cuando se scrollea la pag)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
-    <header class="m-0">
-        <div>
-            <p class="contactinfo">📞 +54 9 11 3316 8094  |  📧 3dexpress.ba@gmail.com</p>
+        <!-- Metaetiquetas de posicionamiento -->
 
-        </div>
-         
+        <meta property="og:title" content="Impresión 3D">
+        <meta property="og:description" content="Hacemos el servicio de Impresión 3D más rápido de C.A.B.A.">
+        <meta property="og:type" content="Pagina Web">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta name="twitter:card" content="Impresión 3D"> 
+        <meta name="twitter:site" content="@impresion3D">
 
-    </header>
+    </head>
 
-    <!-- Navbar -->
+    <body>
 
-    <nav class="">
-            
-      <div class=" bg-primary ">
+                <!-- Header con navbar -->
 
-          <div class="container justify-content-center">
-  
-              <nav class="navbar navbar-expand-lg navbar-dark ">
-  
-                  <div class="container-fluid">
-  
-                    <a class="navbar-brand" href="index.html">3D Express (logo)</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
-                        
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
-                        </li>
-  
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#contact">Contacto</a>
-                        </li>
+                <header class=" fixed-top">
 
-                        <li class="nav-item">
-                          <a class="nav-link disable" aria-current="page" href="#" disable>Blog</a>
-                        </li>
-                        
-                      </ul>
-                      
+                    <div class="row text-start text-white mt-2 mb-2 ">
+        
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+        
+                            <p class="contactinfo">📞 +54 9 11 3316 8094</p>
+        
+                        </div>
+        
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+        
+                            <p class="contactinfo">📧 3dexpress.ba@gmail.com</p>
+        
+                        </div>
+        
                     </div>
-                  </div>
-                </nav>
-  
-      </div>
+        
+                    
+        
+                      <nav class="nav3d">
+                          
+                          <div class=" bg-primary ">
+                    
+                              <div class="container justify-content-center">
+                      
+                                  <nav class="navbar navbar-expand-lg navbar-dark ">
+                      
+                                      <div class="container-fluid ">
+                      
+                                        <a class="navbar-brand" href="index.html" style="font-family: 'Kanit', sans-serif;">3D Express</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                          <ul class="navbar-nav ms-auto mb-0 mb-lg-0 text-start">
+                                            
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
+                                            </li>
+                      
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
+                                            </li>
+                      
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                                            </li>
+                      
+                                            <li class="nav-item">
+                                              <a class="nav-link active" aria-current="page" href="index.html">Contacto</a>
+                                            </li>
+                    
+                                            <li class="nav-item">
+                                              <a class="nav-link disable" aria-current="page" href="#" disable>Blog</a>
+                                            </li>
+                                            
+                                          </ul>
+                                          
+                                        </div>
+                                      </div>
+                                    </nav>
+                      
+                          </div>
+                    
+                      </nav>
+        
+                    
+        
+        
+                </header>
 
-  </nav>
+                <!-- nice image -->
 
-    <!-- Imagen representativa -->
+                <div class="">
 
-    <div class="row">
-      <div class="col-md-12">
-        <img  class="recortevertical img-fluid w-100" src="IMG/3dpic1.png" alt="imagen representativa">
-      </div>
-    </div>
-
-
-    <!-- Acerca de nosotros -->
-
-    <main>
-        <div class="text-center acerca">
-            <h2>Acerca de nosotros</h2>
-        </div>
-
-        <div class="container-fluid container2 text-left mb-4">
-
-          <div class="row subcontainer">
-          
-
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minima natus fuga! Aliquam neque odit quam ex molestias mollitia at, quae accusantium quisquam aut corrupti sit rerum incidunt itaque saepe.</p>
-            </div>
-
-            <div class="col-md-6">
-                <img src="IMG/Frame 4.png" alt="imagen">
-            </div>
-
-          </div>
-
-        </div>
-
-
-    </main>
-
-    <!-- Banner gif(en lo posible) impresion 3d -->
-
-    <section>
-
-      <div class="gif">
-        <img class="img-fluid w-100" src="IMG/sustituto banner empresa2.jpg" alt="banner">
-      </div>
-    </section>
-
-    <!-- Confidencialidad -->
-
-    <section class="confidencialidad" >
-
-        <div class="container-fluid container2 text-left ">
-
-          <div class="row subcontainer1">
-
-            <div class="col-md-6 acuerdo">
-                <div class="conficencialtitulo">
-                    <h3 class="text-left">Acuerdo de confidencialidad</h3>
-                
-
-                  <br><br>
-
-                
-                    <p>Sabemos trabajar en el desarrollo de productos, por eso tomamos seriamente la confidencialidad de nuestros clientes.
-
-                  <br><br><br>
-
-                  <strong> Estamos dispuesto a firmar los acuerdos de confidencialidad necesarios para que sus inversiones permanezcan protegidas y podamos comenzar a trabajar.</strong></p>
+                    <img src="IMG/ventajas-impresion-3d-fabricacion-aditiva-01-1195x800.jpg" alt="3D" class="img-fluid img-3d">
+                    
                 </div>
-            </div>
 
-              <div class="col-md-6 imagenconfi">
-                <img class="img-fluid" src="IMG/SVG/confidencial.svg" alt="svg">
-              
-              </div>
+                <!-- About us -->
 
-          </div>
+                <main>
+                    <div class="text-center acerca">
+                      <h2>Acerca de nosotros</h2>
+                    </div>
+                
+                    <div class="container-fluid container2 text-left mb-4">
+                
+                      <div class="row subcontainer">
+                
+                
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <p>Somos gente apasionada por resolver las necesidades de las problematicas de la industria, brindando soluciones a medida. Nuestra formación en diseño e ingeniería y nuestra experiencia en el mercado nos permite potenciar a nuestros clientes.
 
-        </div>
+                          Llevamos el diseño y la manufactura digital a productos y necesidades reales.</p>
+                        </div>
+                
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <img src="IMG/Frame 4.png" alt="imagen" class="img-fluid">
+                        </div>
+                
+                      </div>
+                
+                    </div>
+                
+                
+                </main>
 
-    </section>
+                <!-- Banner gif(en lo posible) impresion 3d -->
 
+                <section>
 
+                    <div class="gif">
+                        <img class="img-fluid w-100 img-gif" src="IMG/sustituto banner empresa2.jpg" alt="banner">
+                    </div>
 
+                </section>
 
+                <!-- My footer -->
 
+                <footer class="footer1 row overflow-x-hidden">
 
+                    <div>
+                        <p>© 2023 | Todos los derechos reservados</p>
+                        <p class="writtenby">Hecho por Emanuel Morano Solé</p>
+                    </div>
+  
+                </footer>
+        
 
+                <!-- Javascript de Bootstrap y propio -->
 
-    <footer class="footer1">
-        <div>
-            <p>© 2023 | Todos los derechos reservados</p>
-            <p class="writtenby">Hecho por Emanuel Morano Solé</p>
-        </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-</html>
+                <script src="JS/script.js"></script>
+    </body>
