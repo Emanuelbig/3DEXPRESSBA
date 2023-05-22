@@ -1,4 +1,10 @@
+body {
+    background-color: hsl(62, 87%, 94%);
 
+    overflow-x: hidden;
+          
+    
+}
 
 header {
     background-color: hsl(216, 85%, 39%);
@@ -15,7 +21,12 @@ header {
 
 }
 
-
+.iconcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
 .contactinfo {
 
@@ -36,13 +47,6 @@ nav {
 
 }
 
-body {
-    background-color: hsl(62, 87%, 94%);
-
-    overflow-x: hidden;
-          
-    
-}
 
 /* section {
     display: flex;
@@ -79,6 +83,20 @@ body {
 
 } 
 
+/* Services we offer */
+
+.services2 {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services3 {
+    position: relative;
+}
 
 .serviceimg {
     width: 600px;
@@ -108,6 +126,29 @@ body {
 
 /* design thinking */
 
+.designsteps {
+
+    text-align: center;
+
+}
+
+.designtimg {
+
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* How to contact us */
+
+.howto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
   /* footer  */
 
@@ -132,8 +173,15 @@ body {
 }
 
 .writtenby {
-    font-size: 15px;
+    
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.mediaicon:hover {
+  background-color: aliceblue;
+  transition: .5s;
+  
+
 }
 
 
@@ -357,7 +405,13 @@ li {
 
 /* ------------------------- */
 
-@media  (max-width: 720px) {
+@media (max-width: 720px) {
+
+    .iconcontact {
+
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
 
 
     .imgcarousel {
@@ -379,6 +433,12 @@ li {
         height: 60vh;
         object-fit: cover;
 
+    }
+
+    .designtimg {
+
+        width: 100px;
+        height: 100px;
     }
 
     .brhk {
@@ -420,13 +480,26 @@ li {
     }
 }
 
-@media  (max-width: 1120px) {
+@media (max-width: 1120px) {
+
+    .iconcontact {
+
+        justify-content: flex-start;
+        
+        
+    }
 
     .imgcarousel {
 
         height: 60vh;
         object-fit: cover;
 
+    }
+
+    .designtimg {
+
+        width: 200px;
+        height: 200px;
     }
 
     .brhk {
