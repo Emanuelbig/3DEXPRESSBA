@@ -41,6 +41,11 @@ header {
     
 }
 
+.imgcarousel {
+
+   filter: brightness(70%);
+}
+
 nav {
     /* background-color: hsl(34, 100%, 64%); */
     text-align: center;
@@ -56,32 +61,143 @@ nav {
 
 } */
 
-.dropdown {
+/* Store */
+
+.mystore {
+    margin-top: 90px;
+
+    border: 1px solid brown;
+    position: relative;
+    text-align: center;
+}
+
+.button-checkout {
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: #0D6EFD;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 1.5px;
+
+}
+
+.button-checkout:hover {
+    background-color: hsl(216, 85%, 39%);
+    color: white;
+
+}
+
+.product-store {
+    margin-top: 20px;
+    border: 1px solid red;
+
     display: flex;
-    justify-content: right;
-    top: 100px;
-    margin-right: 50px;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+
 
 }
 
-.store , .dropdown {
-    padding-top: 10px;
+
+.product-container {
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+    margin: 20px;
+    padding: 2px 16px;
+
+    position: relative;
+    width: 330px;
+    height: 510px;
+    text-align: center;
+
 }
+
+.imgproduct-container{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.product-container img {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+    object-fit: cover;
+    
+}
+
+.product-container img:hover {
+    transform: scale(1.5);
+    
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-description {
+    text-align: left;
+}
+
+
+.button-add {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: #0D6EFD;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+  
+.button-add:hover {
+    background-color: hsl(216, 85%, 39%);
+    color: white;
+}
+
+.prices {
+
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px ;
+    
+    
+}
+
+.oldprice {
+    margin-top: 5px;
+    text-decoration: line-through;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+}
+.price {
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
 
 .servicetitled {
     padding-top: 30px;
 
 }
 
- .seccion2 {
-
-    display:flexbox;
-    /* flex-direction: row; */
-    /* justify-content:space-between; */
-    /* gap: 20px ;  */
-    /* overflow:visible; */
-
-} 
 
 /* Services we offer */
 
@@ -179,13 +295,12 @@ nav {
 
 .mediaicon {
     color:hsl(216, 85%, 39%);
+    transition: color .5s;
   
   }
   
 .mediaicon:hover {
-  color: aliceblue!important;
-  transition: .5s;
-  /* box-shadow: 1px 1px 1px 1px; */
+  color: aliceblue!important; 
 
 }
 
