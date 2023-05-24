@@ -66,7 +66,7 @@
 
         <!-- Header con navbar --><!--📧  --><!-- 📞 -->
 
-        <header>
+        <!-- <header>
 
             <div class="row text-start text-white mt-2 mb-2 ">
 
@@ -122,7 +122,7 @@
                                     </li>
               
                                     <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="index.html">Contacto</a>
+                                      <a class="nav-link active" aria-current="page" href="index.html#contact">Contacto</a>
                                     </li>
             
                                     <li class="nav-item">
@@ -142,27 +142,39 @@
             
 
 
-        </header>
-        
-        <!-- another dropdown -->
-
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            que quere comprah
-            </button>
-            <ul class="dropdown-menu">
-            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-            <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-            </ul>
-        </div>
+        </header> -->
 
         <!-- Store -->
 
         <div class="mystore">
             <H2>La Tienda</H2>
-            <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+            <!-- asd -->
+            <div class="container-icon">
+                <div class="icon-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(15, 83, 184, 1);transform: msFilter;"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+                </div>
+                <div class="count-products">
+                    <span id="counting-products">0</span>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cuantity-cart-product">1</span>
+                            <p class="title-product-cart">producto</p>
+                            <span class="price-product-cart">$80</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-close" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(116, 172, 255, 1);transform: msFilter"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                    </div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-payment">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
         </div>
+        <!-- asd -->
 
         <section class="product-store">
 
@@ -178,7 +190,7 @@
                     <h3 class="oldprice">$750</h3>
                     <h3 class="price">$550</h3>
                 </div>
-                <button class="button-add" onclick="add('product1,550')">Agregar al carrito</button>
+                <button class="button-add" onclick="add('producto 1', 550)">Agregar al carrito</button>
             </div>
             <div class="product-container">
                 <h3 class="product-name">Posavasos tronco</h3>
@@ -380,69 +392,75 @@
             </h2>
         </div> -->
 
-        <!-- Contact form -->
+        <!-- Contact form -->  
 
-         <!-- formulario de contacto en html y css -->  
+    <section class="form-section">
 
-  <div class="contact_form">
+        <div class="contact_form">
 
-    <div class="formulario">      
-      <!-- <h1>Formulario de contacto</h1> -->
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+            <div class="formulario">      
+            <!-- <h1>Formulario de contacto</h1> -->
+                <h3 class="formtext1">Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
-          <form action="submeter-formulario.php" method="post">       
+                <form action="submeter-formulario.php" method="post">       
 
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                <p>
-                  <label for="website" class="colocar_website">Sitio web
-                  </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                </p>    
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                    
+                        <p class="p-form">
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                    
+                        <p class="p-form">
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p class="p-form">
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                    
+                        <p class="p-form">
+                        <label for="website" class="colocar_website">Sitio web
+                        </label>
+                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                        </p>    
+                    
+                        <p class="p-form">
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                    
+                        <p class="p-form">
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                    
+                        <button class="sendbutton" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
+                        <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                    
+                </form>
+            </div>  
+        </div>
+
+        <div class="img-form">
+            <img src="IMG/frame 4.png" alt="" class="img-fluid">
+        </div>
+
+    </section>
 
         <!-- My footer -->
 

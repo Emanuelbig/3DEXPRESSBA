@@ -6,12 +6,11 @@ function add(product, price) {
     console.log(product, price);
     products.push(product);
     total = total + price;
-    document.getElementById("checkout").innerHTML = 'Pagar $'+ total
+    document.getElementById("checkout").innerHTML =`Pagar $${total}`;
 
 }
 
-function pay(product, price) {
+function pay() {
     // console.log(product, price);
-    window.alert(products.join(",\n"));
+    window.alert(products.join(", \n"));
 }
-

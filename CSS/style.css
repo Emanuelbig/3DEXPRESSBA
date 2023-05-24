@@ -64,11 +64,128 @@ nav {
 /* Store */
 
 .mystore {
-    margin-top: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+
+    /* margin-top: 150px;
 
     border: 1px solid brown;
     position: relative;
-    text-align: center;
+    text-align: center; */
+}
+
+.icon-cart {
+    border: 1px solid red;
+
+    /* position: absolute;
+    right: 150px;
+    bottom: 2.5px; */
+
+}
+
+.container-icon {
+    position: relative;
+}
+
+.count-products {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #0D6EFD;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+
+
+}
+
+#counting-products {
+    font-size: 12px;
+}
+
+.container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) ;
+    border-radius: 10px;
+}
+
+.hidden-cart {
+    display: none;
+}
+/* https://www.youtube.com/watch?v=3BtyzOBLRcg min 42:31 */
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.card-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+    
+}
+
+.title-product-cart{
+    font-size: 20px;
+
+}
+
+.price-product-cart{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.cuantity-cart-product{
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.cart-total {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-total h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-payment {
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .button-checkout {
@@ -81,7 +198,7 @@ nav {
     font-size: 16px;
     border: none;
     transition-duration: 0.4s;
-    position: absolute;
+    /* position: absolute; */
     right: 15px;
     bottom: 1.5px;
 
@@ -198,6 +315,157 @@ nav {
 
 }
 
+/* Contact Form */
+
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+/* body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #ab4493; 
+} */
+
+.form-section {
+    display: flex;
+    
+    flex-flow: row wrap; 
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+}
+
+.img-form {
+    position: relative;
+
+}
+
+.contact_form {  
+  width: 460px; 
+  height: auto;
+    margin: 10px auto; 
+  /* border-radius: 10px;   */
+  padding-top: 10px;
+  padding-bottom: 20px;  
+  /* background-color: #fbfbfb;  */
+   padding-left: 30px;  
+
+  position: relative;
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #0D6EFD; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #0D6EFD; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+.sendbutton{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #0D6EFD; 
+  border-color: #0D6EFD; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+.sendbutton p{
+  color: #fff; 
+}
+
+
+.obligatorio{
+  color: #0D6EFD; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+/* .formtext1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ab4493;
+} */
+
+
+.formtext1{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+.p-form {
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #0F53B8;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #0F53B8;
+}
+
 
 /* Services we offer */
 
@@ -266,7 +534,7 @@ nav {
 }
 
 
-  /* footer  */
+/* footer  */
 
 
 .footer1 {
@@ -354,6 +622,8 @@ nav {
    padding-bottom: 60px;
 }
 
+
+
 /* dasdas */
 
 
@@ -400,9 +670,13 @@ li {
       
 }
 
-.whatlook, .textstore, .acerca, .confidencialidad, .gif {
+.textstore, .acerca, .confidencialidad, .gif {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.whatlook {
+    margin-top: 30px;
 }
 
 
@@ -597,6 +871,15 @@ li {
 
     .ustext{
         text-align: center;
+    }
+
+    /* pag productos */
+
+    .mystore {
+        margin-top: 120px;
+        text-align: left;
+        padding-left: 30px;
+        
     }
 }
 
