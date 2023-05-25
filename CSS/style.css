@@ -539,11 +539,12 @@ label{
 
 .footer1 {
     background-color: hsl(216, 98%, 52%);
-    font-size: 30px;
+    font-size: 20px; 
     padding: 10px;
     text-align: center;
     color: hsl(0, 0%, 100%);
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     flex-flow: row wrap; 
@@ -552,15 +553,73 @@ label{
 
 }
 
+/* //////lo nuevo///// */
+
+
+.iconandmedias{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+
+.logofooter{
+    grid-column: 1;
+    justify-self: start;
+}
+
+.socialmedia{
+    grid-column: 6;
+}
+
+.othersinfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.writes{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 50px;
+    font-size: 14px;
+    
+}
+
+
+/* ////////////////// */
+
 .foottext {
     position: relative;
 }
 
 .writtenby {
+
+    justify-self: start;
     
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.linkwrittenby{
+    text-decoration: none;
+    color: white;
+
+}
+
+.linkwrittenby:hover{
+    transition: 0.5s;
+    color: rgb(0, 255, 255);
+}
+
+.integral{
+    justify-self: start;
+}
 .mediaicon {
     color:hsl(216, 85%, 39%);
     transition: color .5s;
@@ -574,9 +633,10 @@ label{
 
 
 
-.prueba1img {
+/* .prueba1img {
     width: 100%;
-}
+} */
+/* ////////////////////// */
 
 .contenedorbox1 {
     display: flex;
@@ -654,14 +714,6 @@ label{
 li {
     list-style-type: none;
 }
-/* .subcontainer2 {
-
-    display: flex;
-    align-items: center;
-
-
-
-}     */
 
 .hipervinculocontacto {
    
@@ -840,12 +892,86 @@ li {
       }
 
 
-    
+    /* footer */
+
     .footer1 {
 
-        font-size: 14px;
+
+        font-size: 20px;
+        border: 1px solid red;
+
+
         
     }
+
+    .containerofgrids{
+        display: block;
+        justify-content: center;
+        border: 1px solid red;
+
+
+    }
+
+    .iconandmedias {
+        border: 1px solid red;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .othersinfooter {
+        border: 1px solid red;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .otherslink {
+
+        padding-bottom: 10px;
+    }
+
+    .writes {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logofooter {
+        justify-self: unset;
+        max-width: 80%;
+        height: auto;
+        border: 1px solid rgb(0, 143, 67);
+
+    }
+
+    .socialmedia {
+        border: 1px solid rgb(0, 143, 67);
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .integral{
+        justify-self: initial;
+
+    }
+
+
+
+    .writtenby {
+        justify-self: initial;
+
+    }
+
+    /* ////// */
+
     
     .conficencialtitulo {
 
