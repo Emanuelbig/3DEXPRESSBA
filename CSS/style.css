@@ -964,20 +964,10 @@ li {
         
     
         
-        /* justify-content: space-evenly;
-        align-items: center; */
+        justify-content: center;
+        align-items: center;
     
     
-    }
-
-    .imgproduct-container img {
-
-        width: 100%;
-        height: auto;
-        
-
-
-
     }
 
     /* /////// */
