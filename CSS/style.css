@@ -594,8 +594,6 @@ label{
 
 }
 
-/* //////lo nuevo///// */
-
 
 .iconandmedias{
     display: grid;
@@ -632,9 +630,6 @@ label{
     font-size: 14px;
     
 }
-
-
-/* ////////////////// */
 
 .foottext {
     position: relative;
@@ -931,6 +926,24 @@ li {
     .brhk {
         display: none;
       }
+
+    /* Store */
+
+    .product-store {
+    
+        display: grid;
+        grid-template-columns: auto auto ;
+
+        
+    
+        
+        /* justify-content: space-evenly;
+        align-items: center; */
+    
+    
+    }
+
+    /* /////// */
 
 
     /* footer */
