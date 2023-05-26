@@ -946,10 +946,7 @@ li {
 
     .product-container {
 
-        width: 250px;
-        height: 510px;
-
-        /* width: 100%; */
+        width: 100%; 
         padding: 0;
         margin: 0;
         justify-content: center;
