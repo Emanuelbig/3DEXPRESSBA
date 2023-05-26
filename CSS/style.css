@@ -28,12 +28,19 @@ header {
     text-decoration: none;
 }
 
+.contactinfo:hover {
+    transition: 0.5;
+    color: #0e0e0e;
+}
+
 .contactinfo {
 
     color: hsl(0, 0%, 100%);
     margin: 0px;
     padding: 5px;
 }
+
+/* Carousel part  */
 
 .carouselandtext {
 
@@ -51,6 +58,12 @@ nav {
     text-align: center;
 
 }
+
+.introduction {
+    font-size: 20px;
+
+}
+
 
 
 /* section {
@@ -475,7 +488,24 @@ label{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 
+}
+
+.servicetitled {
+    font-size: 32px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    color: #28272C;
+}
+
+.servicetitled2 {
+    font-size: 38px;
+    color: #3D29FE;
+}
+
+.pservice {
+    font-size: 20px;
 }
 
 .services3 {
@@ -485,6 +515,7 @@ label{
 .serviceimg {
     width: 600px;
     height: 600px;
+    font-size: 20px;
 }
 
 .custom-margin-top {
@@ -507,6 +538,12 @@ label{
    
 
 } 
+
+/* Como lo hacemos */
+
+.howwedo {
+    margin-bottom: 120px;
+}
 
 /* design thinking */
 
@@ -531,6 +568,10 @@ label{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+.content {
+    margin-bottom: 90px;
 }
 
 
