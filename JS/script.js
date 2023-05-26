@@ -1,3 +1,4 @@
+
 // JS Store
 let products = [] ;
 let total = 0;
