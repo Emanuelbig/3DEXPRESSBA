@@ -82,6 +82,8 @@ nav {
     justify-content: space-between;
     padding: 30px 0 40px 0;
 
+    border: 1px solid red;
+
     /* margin-top: 150px;
 
     border: 1px solid brown;
@@ -928,6 +930,30 @@ li {
       }
 
     /* Store */
+
+    .mystore {
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff;
+       /* color: #fff; */
+        padding: 10px;
+
+        z-index: 1;
+    }
+
+    .product-container {
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+
+    }
 
     .product-store {
     
