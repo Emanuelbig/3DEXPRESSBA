@@ -64,100 +64,38 @@
 
     <body>
 
-        <header id="product-header"></header>
+        <!-- Header con navbar -->
 
-        <!-- Header con navbar --><!--📧  --><!-- 📞 -->
+        <header id="id-header"></header>
 
-        <!-- <header>
+        <!-- Advertisement Banner -->
 
-            <div class="row text-start text-white mt-2 mb-2 ">
-
-                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
-
-                  <a href="" target="_blank" class="iconcontact">
-                    <img src="IMG/call.svg" alt="call" class="iconcontactreal">
-                    <p class="contactinfo">+54 9 11 3316 8094</p>
-                  </a>
-
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
-
-                  <a href="" target="_blank" class="iconcontact">
-                    <img src="IMG/email.svg" alt="email">
-                    <p class="contactinfo">3dexpress.ba@gmail.com</p>
-                  </a>   
-
-                </div>
-
+        <section class="propaganda">
+            <div class=" banner-propaganda">
+                <img class="img-fluid" src="IMG/Publicity v1.png" alt="20 % off y hasta 6 cuotas sin interes">
             </div>
-
-            
-
-              <nav class="nav3d">
-                  
-                  <div class=" bg-primary ">
-            
-                      <div class="container justify-content-center">
-              
-                          <nav class="navbar navbar-expand-lg navbar-dark ">
-              
-                              <div class="container-fluid ">
-              
-                                <a class="navbar-brand" href="index.html" style="font-family: 'Kanit', sans-serif;">3D Express</a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <ul class="navbar-nav ms-auto mb-0 mb-lg-0 text-start">
-                                    
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
-                                    </li>
-              
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
-                                    </li>
-              
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
-                                    </li>
-              
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="index.html#contact">Contacto</a>
-                                    </li>
-            
-                                    <li class="nav-item">
-                                      <a class="nav-link disable" aria-current="page" href="#" disable>Blog</a>
-                                    </li>
-                                    
-                                  </ul>
-                                  
-                                </div>
-                              </div>
-                            </nav>
-              
-                  </div>
-            
-              </nav>
-
-            
-
-
-        </header> -->
+        </section>
 
         <!-- Store -->
 
         <div class="mystore">
-            <H2>La Tienda</H2>
+            <!-- <H2 class="titletienda">La Tienda</H2> -->
             <!-- asd -->
             <div class="container-icon">
+                <H2 class="titletienda">La Tienda</H2>
                 <div class="icon-cart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(15, 83, 184, 1);transform: msFilter;"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+
+                    <div class="count-products">
+                        <span id="counting-products">0</span>
+                    </div>
+
+                    
                 </div>
-                <div class="count-products">
+                <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+                <!-- <div class="count-products">
                     <span id="counting-products">0</span>
-                </div>
+                </div> -->
                 <div class="container-cart-products hidden-cart">
                     <div class="cart-product">
                         <div class="info-cart-product">
@@ -174,7 +112,7 @@
                 </div>
             </div>
 
-            <!-- <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
+            <!-- <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>  -->
         </div>
         <!-- asd -->
 
@@ -396,13 +334,13 @@
 
         <!-- Contact form -->  
 
-    <!-- <section class="form-section">
+    <section class="form-section">
 
         <div class="contact_form">
 
-            <div class="formulario">       -->
-            <!-- <h1>Formulario de contacto</h1> -->
-                <!-- <h3 class="formtext1">Escríbenos y en breve los pondremos en contacto contigo</h3>
+            <div class="formulario"> 
+            <h1>Formulario de contacto</h1>
+                <h3 class="formtext1">Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
                 <form action="submeter-formulario.php" method="post">       
@@ -462,7 +400,7 @@
             <img src="IMG/frame 4.png" alt="" class="img-fluid">
         </div>
 
-    </section> -->
+    </section>
 
         <!-- My footer -->
 

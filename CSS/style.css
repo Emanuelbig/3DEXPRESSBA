@@ -30,7 +30,7 @@ header {
 
 .contactinfo:hover {
     transition: 0.5;
-    color: #0e0e0e;
+    color: #c5c5c5;
 }
 
 .contactinfo {
@@ -74,6 +74,15 @@ nav {
 
 } */
 
+/* Advertisement banner */
+
+.propaganda{
+    margin-top: 105px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 /* Store */
 
 .mystore {
@@ -82,7 +91,10 @@ nav {
     justify-content: space-between;
     padding: 30px 0 40px 0;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
+
+    background-color: #0D6EFD;
+
 
     /* margin-top: 150px;
 
@@ -91,8 +103,20 @@ nav {
     text-align: center; */
 }
 
+.titletienda {
+    padding-left: 50px;
+    color: white;
+    grid-column: 1;
+}
+
 .icon-cart {
-    border: 1px solid red;
+
+    /* margin-right: 50px; */
+
+    grid-column: 6;
+    
+
+    /* border: 1px solid red; */
 
     /* position: absolute;
     right: 150px;
@@ -101,14 +125,18 @@ nav {
 }
 
 .container-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .count-products {
     position: absolute;
-    top: 55%;
-    right: 0;
-    background-color: #0D6EFD;
+    top: 40%;
+    right: 43px; 
+    background-color: #00e1ff;
     color: #fff;
     width: 25px;
     height: 25px;
@@ -208,14 +236,15 @@ nav {
     padding: 10px 20px;
     border-radius: 5px;
     color: aliceblue;
-    background-color: #0D6EFD;
+    background-color: #00c3dd;
     text-align: center;
     font-size: 16px;
     border: none;
     transition-duration: 0.4s;
-    /* position: absolute; */
-    right: 15px;
-    bottom: 1.5px;
+    position: relative;
+    right: 150px;
+    bottom: 50%;
+    grid-column: 4;
 
 }
 
@@ -230,8 +259,8 @@ nav {
     border: 1px solid red;
 
     display: flex;
-    flex-wrap: wrap;
-    /* flex-flow: row wrap; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 
@@ -929,6 +958,20 @@ li {
         display: none;
       }
 
+    /* Advertisement banner  */
+
+    .propaganda {
+        margin-top: 140px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+
+    .banner-propaganda{
+
+        width: 100%;
+    }
+
     /* Store */
 
     .mystore {
@@ -944,36 +987,28 @@ li {
         z-index: 1;
     }
 
-    .product-container {
-
-        /* width: 100%;  */
-        /* padding: 0;
-        margin: 0; */
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    .product-store {
-
-        max-width: 100%;
-    
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: 50% 50% ; 
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-
-        
-    
-        
-        /* justify-content: center; */
-        align-items: center;
-    
-    
-    }
 
     /* /////// */
+
+    /* Form section */
+
+    .form-section {
+        
+        width: 100vw;
+    
+        padding: unset;
+    
+    }
+
+    .contact_form {
+
+        
+
+       
+
+    }
+
+    /* //////// */
 
 
     /* footer */
@@ -1118,6 +1153,19 @@ li {
     .brhk {
         display: none;
       }
+
+    /* Advertisement banner  */
+
+    .propaganda {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    
+    
+    .banner-propaganda{
+    
+        width: 100%;
+    }
 
 }
 
