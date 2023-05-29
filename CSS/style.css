@@ -371,6 +371,7 @@ nav {
   background-color: #ab4493; 
 } */
 
+
 .form-section {
     display: flex;
     
@@ -379,6 +380,8 @@ nav {
     align-items: center;
 
     padding: 50px;
+
+    border: 1px solid red;
 
 }
 
@@ -395,9 +398,12 @@ nav {
   padding-top: 10px;
   padding-bottom: 20px;  
   /* background-color: #fbfbfb;  */
-   padding-left: 30px;  
+   padding-left: 20px;  
 
-  position: relative;
+  /* position: relative; */
+    
+  border: 1px solid rebeccapurple;
+
 }
 
 
@@ -446,9 +452,10 @@ label{
   background-color: #0D6EFD; 
   border-color: #0D6EFD; 
   border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+  border-radius: 5px;  
+  width: 405px;   
   cursor: pointer;
+  
 }
 
 
@@ -999,6 +1006,7 @@ li {
         padding: unset;
     
     }
+   
 
 
 
