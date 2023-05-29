@@ -1019,6 +1019,9 @@ li {
         padding: unset;
     
     }
+
+    .contact_form {
+        overflow: auto;
    
 
 
