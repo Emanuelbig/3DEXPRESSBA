@@ -390,7 +390,9 @@ nav {
 
 } */
 
-.contact_form {  
+.contact_form { 
+    
+    overflow: auto;
 
   width: 460px; 
   height: auto;
