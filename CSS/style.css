@@ -244,7 +244,7 @@ nav {
     position: relative;
     /* right: 150px;
     bottom: 50%; */
-    grid-column: 6;
+    grid-column: 8;
 
 }
 
@@ -385,10 +385,10 @@ nav {
 
 }
 
-.img-form {
+/* .img-form {
     position: relative;
 
-}
+} */
 
 .contact_form {  
 
@@ -1019,9 +1019,6 @@ li {
         padding: unset;
     
     }
-
-    .contact_form {
-        overflow: auto;
    
 
 
