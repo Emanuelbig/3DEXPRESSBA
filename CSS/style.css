@@ -242,9 +242,9 @@ nav {
     border: none;
     transition-duration: 0.4s;
     position: relative;
-    right: 150px;
-    bottom: 50%;
-    grid-column: 4;
+    /* right: 150px;
+    bottom: 50%; */
+    grid-column: 6;
 
 }
 
@@ -982,6 +982,17 @@ li {
 
     /* Store */
 
+    .titletienda {
+
+        grid-column: 1 / span 2;
+
+        color: #28272C;
+    }
+
+    .button-checkout {
+        grid-column: 6;
+    }
+
     .mystore {
 
         position: fixed;
@@ -991,6 +1002,7 @@ li {
         background-color: #ffffff;
        /* color: #fff; */
         padding: 10px;
+        border: 1px solid gray;
 
         z-index: 1;
     }
