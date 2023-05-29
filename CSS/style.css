@@ -394,7 +394,7 @@ nav {
     
     /* overflow:auto; */
 
-  width: 460px; 
+  width: auto; 
   height: auto;
     margin: 10px auto; 
   /* border-radius: 10px;   */
@@ -1018,7 +1018,7 @@ li {
 
     .form-section {
         
-        /* width: 100vw; */
+        width: 100vw;
     
         padding: unset;
     
