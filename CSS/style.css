@@ -1069,8 +1069,8 @@ li {
     }
 
     .conficencialtitulo {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
         justify-content: center;
         text-align: center;
     }
@@ -1095,8 +1095,8 @@ li {
     }
 
     .svgconfid {
-       min-width: 300px;
-        min-height: 300px;
+       min-width: 200px;
+        min-height: 200px;
     }
 
 
