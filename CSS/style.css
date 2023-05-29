@@ -1023,8 +1023,13 @@ li {
         padding: unset;
     
     }
-   
 
+    .contact_form { 
+    
+        overflow:auto;
+
+        width: unset;
+    }
 
 
     /* //////// */
@@ -1147,6 +1152,8 @@ li {
     }
 }
 
+
+
 @media (max-width: 1120px) {
 
     .iconcontact {
@@ -1187,8 +1194,6 @@ li {
     }
 
 }
-
-
 
 
 
