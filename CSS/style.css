@@ -127,8 +127,6 @@ nav {
 /* seccion de las cards de la ecommerce */
 .product-store {
     margin-top: 20px;
-    border: 1px solid red;
-
     display: flex;
     /* flex-wrap: wrap; */
     flex-flow: row wrap;
@@ -244,15 +242,11 @@ nav {
 
 
 .form-section {
-    display: flex;
-    
+    display: flex;   
     flex-flow: row wrap; 
     justify-content: center;
     align-items: center;
-
     padding: 3.125em;
-
-    border: 1px solid red;
 
 }
 
@@ -264,17 +258,15 @@ nav {
 .contact_form { 
     
     overflow:auto;
-
-  width: 28.75em; 
-  height: auto;
+    width: 28.75em; 
+    height: auto;
     margin: 0.625em auto; 
   /* border-radius: 10px;   */
-  padding-top: 0.625em;
-  padding-bottom: 1.25em;  
+    padding-top: 0.625em;
+    padding-bottom: 1.25em;  
   /* background-color: #fbfbfb;  */
-   padding-left: 1.25em; 
-   
-   padding-right: 1.25em;
+    padding-left: 1.25em; 
+    padding-right: 1.25em;
 
   /* position: relative; */
     
@@ -329,7 +321,7 @@ label{
   border-color: #0D6EFD; 
   border-style: solid; 
   border-radius: 5px;  
-  width: 405px;   
+  width: 408px;   
   cursor: pointer;
   
 }
