@@ -299,7 +299,7 @@ input{
 
 textarea{
   background-color: #fbfbfb; 
-  width: 405px; 
+  width: 408px; 
   height: 150px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -933,7 +933,7 @@ li {
 
     .form-section {
         
-        width: 100vw;
+        max-width: 100%;
     
         padding: unset;
     
@@ -946,6 +946,18 @@ li {
         /* width: 300px; */
 
         margin: unset;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+
+    .sendbutton {
+        max-width: 100%;
     }
 
 
