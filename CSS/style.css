@@ -250,7 +250,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    padding: 50px;
+    padding: 3.125em;
 
     border: 1px solid red;
 
@@ -265,20 +265,20 @@ nav {
     
     overflow:auto;
 
-  width: 460px; 
+  width: 28.75em; 
   height: auto;
-    margin: 10px auto; 
+    margin: 0.625em auto; 
   /* border-radius: 10px;   */
-  padding-top: 10px;
-  padding-bottom: 20px;  
+  padding-top: 0.625em;
+  padding-bottom: 1.25em;  
   /* background-color: #fbfbfb;  */
-   padding-left: 20px; 
+   padding-left: 1.25em; 
    
-   padding-right: 20px;
+   padding-right: 1.25em;
 
   /* position: relative; */
     
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
 
 }
 
@@ -289,9 +289,9 @@ input{
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
-  border-width: 1px; 
+  border-width: 0.0625em; 
   border-color: #0D6EFD; 
-  margin-top: 10px;  
+  margin-top: 0.625em;  
   padding-left: 10px;
   margin-bottom: 20px; 
 }
@@ -305,8 +305,8 @@ textarea{
   border-style: solid; 
   border-width: 1px; 
   border-color: #0D6EFD; 
-  margin-top: 10px;  
-  padding-left: 10px;
+  margin-top: 0.625em;  
+  padding-left: 0.625em;
   margin-bottom: 20px; 
   padding-top: 15px; 
 }
@@ -766,9 +766,13 @@ li {
 
 }
 
+.h3textconf {
+    padding-top: 30px;
+}
+
 .conficencialsvg {
 
-    margin-left: 172px;
+    margin-left: 130px;
     margin-right: 70px; 
     font-weight: 400;
     font-size: 24px;
@@ -785,13 +789,6 @@ li {
     position: relative;
 
 
-
-
-}
-
-.svgconfid {
-    width: 600px;
-    height: 600px;
 }
 
 .acuerdo {
@@ -804,10 +801,10 @@ li {
 
 .confidenceimg {
 
-    width:100%;
+    width: 100%;
+    
 
-
-}
+} 
 
 .tituloconfidencial {
    display: flex;
@@ -819,8 +816,9 @@ li {
 
 @media (max-width: 720px) {
 
+
     .imagenavlogo{
-        max-width: 120px;
+        max-width: 170px;
     }
 
     .iconcontact {
@@ -957,65 +955,46 @@ li {
     /* footer */
 
     .footer1 {
-
-
-        font-size: 20px;
-        border: 1px solid red;
-
-
-        
+        font-size: 20px;       
     }
 
     .containerofgrids{
         display: block;
         justify-content: center;
-        border: 1px solid red;
-
-
     }
 
     .iconandmedias {
-        border: 1px solid red;
         display: block;
         justify-content: center;
         align-items: center;
-
     }
 
     .othersinfooter {
-        border: 1px solid red;
-
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
-
     }
 
     .otherslink {
-
         padding-bottom: 10px;
     }
 
     .writes {
-        border: 1px solid red;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
-
     }
 
     .logofooter {
         justify-self: unset;
         max-width: 80%;
         height: auto;
-        border: 1px solid rgb(0, 143, 67);
 
     }
 
     .socialmedia {
-        border: 1px solid rgb(0, 143, 67);
         padding-top: 10px;
         margin-top: 10px;
     }
