@@ -228,6 +228,47 @@ nav {
 
 }
 
+/* Video section */
+
+.videosection {
+    /* Ajusta este valor según tus necesidades */
+    
+    margin-top: 100px;
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    justify-content: center;
+    border-top-right-radius: 200px;
+    
+}
+
+video {
+    filter: brightness(50%);
+}
+
+video.playing {
+    filter: brightness(100%);
+}
+
+video.playing + .textoonvideo {
+    opacity: 0 ;
+}
+
+.textoonvideo{
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5.625em;
+    text-align:start;
+    font-family: "Futura", sans-serif;
+}
+
 /* Contact Form */
 
 /* Importación de fuentes de google fonts */ 
@@ -917,9 +958,26 @@ li {
 
         z-index: 1;
     }
-
-
     /* /////// */
+
+    /* Video section */
+
+    .videosection {
+    max-width: 100%; /* El contenedor ocupará todo el ancho disponible en dispositivos con un ancho máximo de 768px */
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+
+    video{
+    max-width: 100%;
+    border-top-right-radius: unset;
+
+    }
+
+    .textoonvideo{
+        font-size: 32px;
+    } 
 
     /* Form section */
 
@@ -1096,7 +1154,7 @@ li {
 
 
 
-@media (max-width: 1120px) {
+@media screen and (min-width:721px) and (max-width: 1120px) {
 
     .iconcontact {
 
@@ -1134,6 +1192,28 @@ li {
     
         width: 100%;
     }
+
+    /* Video section */
+
+    .videosection {
+    max-width: 100%; /* El contenedor ocupará todo el ancho disponible en dispositivos con un ancho máximo de 768px */
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+
+    video{
+    max-width: 100%;
+    border-top-right-radius: unset;
+
+    }
+
+    .textoonvideo{
+        font-size: 60px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+    } 
 
 }
 
