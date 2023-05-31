@@ -38,7 +38,7 @@ document.getElementById("id-header").innerHTML=
 
               <div class="container-fluid ">
 
-                <a class="navbar-brand" href="index.html" style="font-family: 'Kanit', sans-serif;"><img src="IMG/LOGO ICON 2.png" alt=""  class="imagenavlogo"></a>
+                <a class="navbar-brand" href="../index.html" style="font-family: 'Kanit', sans-serif;"><img src="../IMG/LOGO ICON 2.png" alt=""  class="imagenavlogo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,7 +50,7 @@ document.getElementById("id-header").innerHTML=
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html#services">Servicios</a>
+                      <a class="nav-link active" aria-current="page" href="../index.html#services">Servicios</a>
                     </li>
 
                     <li class="nav-item">
@@ -58,7 +58,7 @@ document.getElementById("id-header").innerHTML=
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html#contact">Contacto</a>
+                      <a class="nav-link active" aria-current="page" href="../index.html#contact">Contacto</a>
                     </li>
 
                     <li class="nav-item">
@@ -83,7 +83,7 @@ document.getElementById("id-footer").innerHTML=
 
   <div class="iconandmedias">
 
-    <img src="IMG/LOGO ICON 2.png" alt="iconfooter" height="70" width="350" class="logofooter">
+    <img src="../IMG/LOGO ICON 2.png" alt="iconfooter" height="70" width="350" class="logofooter">
 
 
     <div class="socialmedia">
