@@ -464,6 +464,11 @@ label{
     color: #3D29FE;
 }
 
+.servicetitled3 {
+    font-size: 38px;
+    color: #3D29FE;
+}
+
 .pservice {
     font-size: 20px;
 }
@@ -898,7 +903,18 @@ li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .servicetitled3 {
+        text-align: start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .pservice {
+        text-align:start;
+    }
+
+    .pservice2{
         text-align: center;
     }
 
@@ -913,6 +929,10 @@ li {
 
     .content {
         margin-bottom: 0px;
+    }
+
+    .brservice {
+        display: none;
     }
 
     /* /////////// */
@@ -1153,11 +1173,12 @@ li {
         padding-left: 50px;
         padding-right: 50px;
         justify-content: center;
-        text-align: center;
+        text-align: start;
     }
 
     .h3textconf{
-        text-align: center;
+        text-align: start;
+        font-size: 32px;
     }
 
     .niceimg {
