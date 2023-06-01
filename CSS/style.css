@@ -1219,3 +1219,9 @@ li {
     /* ////// */
 
 }
+
+/* Animate */
+.animate-on-scroll {
+    opacity: 0;
+    visibility: hidden;
+}
