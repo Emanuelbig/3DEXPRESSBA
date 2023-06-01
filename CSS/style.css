@@ -83,13 +83,67 @@ nav {
     grid-column: 2;
 }
 
+.wallet{
+    width: 50px;
+    height: 50px;
+    grid-column: 11;
+    /* border: 1px solid red; */
+    position: relative;
+}
+/* prueba wallet */
+.iconwallet {
+    fill: rgb(255, 255, 255);
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+.iconwallet.clicked {
+    /* fill: #00e1ff; */
+    fill: yellow;
+    
+}
+
+@keyframes blink {
+    0% {
+      /* fill: #00e1ff; */
+      fill: yellow;
+    }
+    50% {
+      fill: rgb(255, 255, 255);
+    }
+    100% {
+      /* fill: #00e1ff; */
+      fill: yellow;
+    }
+}
+  
+.iconwallet.loading {
+    animation: blink 1s infinite;
+}
+
+/* /////// */
+.original-chart {
+    grid-column: 12;
+    position: relative;
+    /* border: 1px solid red;  */
+    max-width: 50px;
+
+} 
+
 .icon-chart2 {
     grid-column: 12;
     position: relative;
     display: inline-flex;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     max-width: 50px;
 }
+
+.letter-ecommerce{
+    position: absolute;
+    top: 80%;
+}
+
+
 
 .count-products {
     position: absolute;
@@ -108,6 +162,18 @@ nav {
 
 #counting-products {
     font-size: 12px;
+}
+
+#counting-products.hidden {
+    display: none;
+}
+
+.count-products.hidden {
+    display: none;
+  }
+
+.count-products.red {
+    background-color: red;
 }
 
 .button-checkout {
@@ -173,6 +239,21 @@ nav {
     text-align: left;
 }
 
+.heart{
+    width: 28px;
+    height: 28px;
+    position: relative; 
+    top: -9%;
+    left: 25%; 
+    cursor: pointer;
+    fill: gray;
+}
+
+.heart.active path {
+    fill: red;
+    transition: fill 0.3s ease-in-out;
+  }
+
 .button-add {
     padding: 10px 20px;
     border-radius: 5px;
@@ -209,6 +290,13 @@ nav {
     margin-left: 0px;
     margin-top: 5px;
     font-size: 20px;
+}
+
+.gangaprice {
+    color: #2AB56D;
+    margin-bottom: 5px;
+    margin-left: -115px;
+    margin-top: 35px;
 }
 
 
@@ -587,8 +675,6 @@ label{
     align-items: center;
 }
 
-/* le pones en un div el iframe y el otro la div que contenga contacto... entonces le haces un container fluid, otra div row y a lo que contenga contacto y iframe le pones una clase col-6 */
-
 li {
     list-style-type: none;
 }
@@ -797,25 +883,63 @@ li {
     }
 
     /* Store */
-
-    .titletienda {
-        grid-column: 1 / span 2;
-        color: #28272C;
-    }
-
-    .button-checkout {
-        grid-column: 6;
-    }
-
     .store {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         padding: 10px;
         z-index: 1;
+        
     }
+
+    /* .titletienda {
+        display: none;
+        grid-column: 1 / span 2;
+        color: #28272C;
+    } */
+
+    .titlestore{
+        display: none;
+    }
+
+    .button-checkout {
+        grid-column: 1;
+    }
+
+    .icon-chart2{
+        grid-column: 4;
+        justify-self: center;
+        
+    }
+
+    .wallet{
+        grid-column: 3;
+        justify-self: center;
+    }
+
     /* /////// */
+
+    /* cards ecommerce */
+    .heart{
+        width: 28px;
+        height: 28px;
+        position: relative; 
+        top: -8%;
+        left: 25%; 
+        cursor: pointer;
+        fill: gray;
+    }
+
+    .gangaprice {
+        color: #2AB56D;
+        margin-bottom: 5px;
+        margin-left: -115px;
+        margin-top: 42px;
+    }
 
     .divisionstore-others {
         margin-left: unset;
@@ -943,11 +1067,11 @@ li {
 
     /* pag productos */
 
-    .mystore {
+    /* .mystore {
         margin-top: 120px;
         text-align: left;
         padding-left: 30px;
-    }
+    } */
 
     /* empresa page */
 
