@@ -1,3 +1,12 @@
+// JS close boton
+const contactboton = document.querySelector('.contact-boton');
+const closeBoton = document.querySelector('.close-boton');
+
+function hideContactBar() {
+contactboton.style.display = 'none';
+}
+
+closeBoton.addEventListener('click', hideContactBar);
 
 // JS Store
 let products = [] ;
