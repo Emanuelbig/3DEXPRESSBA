@@ -33,6 +33,11 @@ header {
     padding: 5px;
 }
 
+.close-boton {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
 /* Carousel part  */
 
 .carouselandtext {
@@ -786,6 +791,14 @@ li {
 /* ------------------------- */
 
 @media (max-width: 720px) {
+    /* Nav */
+    .close-boton {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+    }
+    /* //// */
 
     .imagenavlogo{
         max-width: 170px;
