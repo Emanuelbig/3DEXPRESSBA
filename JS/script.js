@@ -21,9 +21,10 @@ function add(product, price) {
 }
 
 function pay() {
-    // console.log(product, price);
-    window.alert(products.join(", \n"));
+    // console.log(product, price); window.alert(products.join(", \n"));
+    swal('Productos agregados:',products.join(", \n"));
 }
+
 
 
 //JS Comportamiento Chart
@@ -58,7 +59,7 @@ function walletprendida() {
 }
   
 function showPaymentAlert() {
-    alert("Un familiar tuyo ya sabia que querias el producto y lo pago de antemano por vos");
+    swal("¡Sorpresa perfecta! Un ser querido anticipó tus deseos, pagando por adelantado el producto que tanto anhelabas.");
 }
 
 // JS Efecto loading wallet
@@ -93,6 +94,38 @@ function walletprendida() {
 
 function toggleHeartColor() {
     const heart = document.getElementById('heart-icon');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor1() {
+    const heart = document.getElementById('heart-icon1');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor2() {
+    const heart = document.getElementById('heart-icon2');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor3() {
+    const heart = document.getElementById('heart-icon3');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor4() {
+    const heart = document.getElementById('heart-icon4');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor5() {
+    const heart = document.getElementById('heart-icon5');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor6() {
+    const heart = document.getElementById('heart-icon6');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor6() {
+    const heart = document.getElementById('heart-icon6');
+    heart.classList.toggle('active');
+  }
+  function toggleHeartColor7() {
+    const heart = document.getElementById('heart-icon7');
     heart.classList.toggle('active');
   }
 
