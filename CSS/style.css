@@ -113,10 +113,9 @@ nav {
     width: 50px;
     height: 50px;
     grid-column: 11;
-    /* border: 1px solid red; */
     position: relative;
 }
-/* prueba wallet */
+
 .iconwallet {
     fill: rgb(255, 255, 255);
     transition: fill 0.3s;
@@ -124,21 +123,18 @@ nav {
 }
 
 .iconwallet.clicked {
-    /* fill: #00e1ff; */
     fill: yellow;
     
 }
 
 @keyframes blink {
     0% {
-      /* fill: #00e1ff; */
       fill: yellow;
     }
     50% {
       fill: rgb(255, 255, 255);
     }
     100% {
-      /* fill: #00e1ff; */
       fill: yellow;
     }
 }
@@ -151,7 +147,6 @@ nav {
 .original-chart {
     grid-column: 12;
     position: relative;
-    /* border: 1px solid red;  */
     max-width: 50px;
 
 } 
@@ -160,7 +155,6 @@ nav {
     grid-column: 12;
     position: relative;
     display: inline-flex;
-    /* border: 1px solid red;  */
     max-width: 50px;
 }
 
@@ -177,7 +171,6 @@ nav {
     color: #fff;
     width: 25px;
     height: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -906,7 +899,6 @@ li {
     /* Advertisement banner  */
 
     .propaganda {
-        /* margin-top: 140px; */
         margin-left: unset;
         margin-right: unset;
     }
@@ -950,12 +942,6 @@ li {
         z-index: 1;
         
     }
-
-    /* .titletienda {
-        display: none;
-        grid-column: 1 / span 2;
-        color: #28272C;
-    } */
 
     .titlestore{
         display: none;
