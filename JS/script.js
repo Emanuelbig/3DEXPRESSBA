@@ -25,8 +25,6 @@ function pay() {
     swal('Productos agregados:',products.join(", \n"));
 }
 
-
-
 //JS Comportamiento Chart
 
 let cartCount = 0;
@@ -75,20 +73,6 @@ function walletprendida() {
     var walletenon = document.getElementById("walletenon");
     walletenon.classList.remove("loading");
 }
-
-// function updateCartBadge() {
-//     const cartBadge = document.getElementById('cart-badge');
-//     cartBadge.textContent = cartCount;
-  
-//     if (cartCount > 0) {
-//       cartBadge.classList.remove('hidden');
-//       cartBadge.classList.add('red');
-//     } else {
-//       cartBadge.classList.add('hidden');
-//       cartBadge.classList.remove('red');
-//     }
-//   }
-
 
 //JS Comportamiento Heart
 
