@@ -75,6 +75,14 @@ nav {
 
 /* Store */
 
+.onlyresponsive-hr {
+    display: none;
+}
+
+.titlestore-responsive {
+    display: none;
+}
+
 .store {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -496,6 +504,10 @@ label{
     font-size: 20px;
 }
 
+.pservice2 {
+    font-size: 20px;
+}
+
 .services3 {
     position: relative;
 }
@@ -897,6 +909,17 @@ li {
     }
 
     /* Store */
+
+    .titlestore-responsive {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .onlyresponsive-hr {
+        display: block;
+    }
+
     .store {
         display: grid;
         grid-template-columns: auto auto auto auto;
