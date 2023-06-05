@@ -1018,6 +1018,7 @@ li {
 
     .textoonvideo{
         font-size: 32px;
+        pointer-events: none;
     } 
 
     /* Form section */
