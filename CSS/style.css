@@ -206,6 +206,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 100%;
 }
 
 .product-container {
@@ -801,7 +802,7 @@ li {
     /* //// */
 
     .imagenavlogo{
-        max-width: 170px;
+        max-width: 150px;
     }
 
     .iconcontact {
@@ -1101,7 +1102,7 @@ li {
 
     .h3textconf{
         text-align: start;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .niceimg {
