@@ -1,8 +1,7 @@
 // Atajos estructuras HTML
 
 document.getElementById("id-header").innerHTML= 
-`           
-<div class="row text-start text-white mt-2 mb-2 ">
+`<div class="row text-start text-white mt-2 mb-2 ">
 
   <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
     <a href="" target="_blank" class="iconcontact">
@@ -59,13 +58,11 @@ document.getElementById("id-header").innerHTML=
               </div>
           </nav>
   </div>
-</nav>
-`
+</nav>`
 
 
 document.getElementById("id-footer").innerHTML=
-`
-<div class="container containerofgrids">
+`<div class="container containerofgrids">
 
   <div class="iconandmedias">
 
@@ -98,5 +95,4 @@ document.getElementById("id-footer").innerHTML=
 
   </div>
 
-</div>
-`
+</div>`

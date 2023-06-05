@@ -25,6 +25,7 @@ function pay() {
     window.alert(products.join(", \n"));
 }
 
+
 //JS Comportamiento Chart
 
 let cartCount = 0;
