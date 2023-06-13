@@ -51,7 +51,7 @@
         <!-- <header class="main-header" id="id-header"></header> -->
         <header class="main-header">
 
-            <div class="row text-start text-white mt-2 mb-2 contact-boton">
+            <div class="row text-start text-white mt-2 mb-2 contact-boton" id="barra-superior">
                 <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
                   <a href="" target="_blank" class="iconcontact">
                     <svg fill="currentcolor" alt="call" class="iconcontactreal" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@
                   </a>   
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6 d-flex justify-content-end">
-                  <span class="close-boton contactinfo">&times;</span>
+                  <span class="close-boton contactinfo" id="eliminar-barra" onclick="eliminarBarra()">&times;</span>
                 </div>
             </div>
            
@@ -108,11 +108,11 @@
         </header>
 
         <!-- blue rectangle -->
-        <div class="blue-rectangule"></div>
+        <!-- <div class="blue-rectangule"></div> -->
 
         <!-- Advertisement Banner -->
 
-        <section class="propaganda">
+        <section class="propaganda" id="secciones-pagina">
             <div class=" banner-propaganda">
                 <img class="publicity" src="../IMG/Publicity v1.png" alt="20 % off y hasta 6 cuotas sin interés">
             </div>

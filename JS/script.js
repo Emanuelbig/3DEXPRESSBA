@@ -8,6 +8,16 @@ contactboton.style.display = 'none';
 
 closeBoton.addEventListener('click', hideContactBar);
 
+// prueba closeboton
+
+function eliminarBarra() {
+  var barraSuperior = document.getElementById("barra-superior");
+  barraSuperior.style.display = "none";
+
+  var seccionesPagina = document.getElementById("secciones-pagina");
+  seccionesPagina.style.marginTop = "55px";
+}
+
 // JS Store
 let products = [] ;
 let total = 0;
