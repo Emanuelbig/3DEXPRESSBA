@@ -127,6 +127,8 @@ nav {
     text-align: center;
 }
 
+@import url('https://fonts.cdnfonts.com/css/centrale-sans-regular');
+
 .introduction {
     font-size: 20px;
 }
@@ -581,10 +583,12 @@ label{
 .pservice {
     font-size: 20px;
     color: #28272C;
+    font-family: 'Centrale Sans Regular', sans-serif;
 }
 
 .pservice2 {
     font-size: 20px;
+    font-family: 'Centrale Sans Regular', sans-serif;
 }
 
 .services3 {
@@ -822,6 +826,7 @@ li {
 .subcontainer {
     display: flex;
     align-items: center;
+    max-width: 100%;
 }
 
 /* Acuerdo de confidencialidad */
@@ -853,6 +858,10 @@ li {
 .h3textconf {
     padding-top: 30px;
     font-size: 36px;
+}
+
+.p-confidencial {
+    font-family: 'Centrale Sans Regular', sans-serif;
 }
 
 .conficencialsvg {
