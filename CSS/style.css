@@ -1215,12 +1215,12 @@ li {
 
     .niceimg {
         margin-top: 55px;
-        height: 80vh;
+        height: 85vh;
         object-fit: cover;
     }
 
     .niceimg img {
-        height: 80vh;
+        height: 85vh;
         object-fit: cover;
     }
 
