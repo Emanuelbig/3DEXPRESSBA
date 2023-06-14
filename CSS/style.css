@@ -1,3 +1,81 @@
+/* Preloader */
+#pantalla-carga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0D6EFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    visibility: visible; /* Agrega esta línea */
+}
+
+#pantalla-carga svg {
+    margin-bottom: 10px;
+    animation: titilar 1.5s ease-in-out infinite;
+}
+
+#pantalla-carga svg path {
+    fill: none;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 4960;
+    animation: llenar 2s ease-in-out forwards;
+}
+
+#pantalla-carga h1 {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 24px;
+    color: white;
+    animation: titilar 1.5s ease-in-out infinite;
+}
+
+#pantalla-carga #overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: hsl(216, 85%, 39%);
+    animation: expandir 3s ease-in-out forwards;
+    animation-delay: 5s; /* Retraso de 5 segundos después de la animación principal */
+}
+
+@keyframes titilar {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes llenar {
+    0% {
+      stroke-dashoffset: 4960;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+
+@keyframes expandir {
+    0% {
+      height: 10px;
+    }
+    100% {
+      height: 100%;
+    }
+}
+
+
+/* //////// */
 body {
     background-color: hsl(62, 87%, 94%);
     overflow-x: hidden;   
@@ -38,13 +116,6 @@ header {
     margin-right: 10px;
     cursor: pointer;
   }
-
-/* blue rectangule2 */
-.blue-rectangule2 {
-    max-width: 100%;
-    height: 98px;
-    background-color:#0D6EFD;
-}
   
 /* Carousel part  */
 
@@ -62,15 +133,6 @@ nav {
 
 .carouselandtext {
     margin-top: 111px;
-}
-
-/* Blue rectangule */
-
-.blue-rectangule {
-    max-width: 100%;
-    height: 111px;
-    background-color: #0D6EFD;
-    
 }
 
 /* Advertisement banner */
@@ -518,6 +580,7 @@ label{
 
 .pservice {
     font-size: 20px;
+    color: #28272C;
 }
 
 .pservice2 {
@@ -784,7 +847,7 @@ li {
     margin: 1em ;
     min-height: 17em;
     flex-basis: calc(50% - 2em);
-    position: relative;
+    /* position: relative; la dejo oculta para no romper AOS*/
 }
 
 .h3textconf {
@@ -870,7 +933,7 @@ li {
     .servicetitled4 {
         text-align: center;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .pservice {
@@ -907,14 +970,6 @@ li {
 
     .brhk {
         display: none;
-    }
-
-    /* Blue rectangule */
-
-    .blue-rectangule {
-        max-width: 100%;
-        height: 140px;
-        background-color: #0D6EFD;        
     }
 
     /* Advertisement banner  */
@@ -1137,15 +1192,16 @@ li {
     }
 
     .conficencialtitulo {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
         justify-content: center;
         text-align: start;
     }
 
     .h3textconf{
         text-align: start;
-        font-size: 28px;
+        font-size: 32px;
+        padding-top: 0px;
     }
 
     .niceimg {
@@ -1179,6 +1235,10 @@ li {
     .img-gif{
         height: 40vh;
         object-fit: cover;
+    }
+
+    .img-aboutus {
+        margin-bottom: 20px;
     }
 
     /* /////////// */

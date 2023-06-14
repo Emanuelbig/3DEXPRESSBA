@@ -1,3 +1,49 @@
+// JS Preloader
+window.addEventListener("load", function () {
+  var pantallaCarga = document.getElementById("pantalla-carga");
+  var contenido = document.getElementById("contenido");
+
+  // Verificar si el preloader ya se ha mostrado anteriormente
+  var preloaderShown = getCookie("preloaderShown");
+  if (preloaderShown) {
+    // El preloader ya se mostró anteriormente, ocultarlo y mostrar el contenido de inmediato
+    pantallaCarga.style.display = "none";
+    contenido.style.visibility = "visible";
+  } else {
+    // El preloader no se ha mostrado anteriormente, mostrarlo y luego ocultarlo después de 5 segundos + duración de la animación de expandir
+    setTimeout(function () {
+      pantallaCarga.style.display = "none";
+      contenido.style.visibility = "visible";
+
+      // Establecer una cookie que indica que el preloader se ha mostrado
+      setCookie("preloaderShown", "true", 1); // La cookie expirará después de 1 día
+    }, 8000); // 5 segundos (5000 ms) + duración de la animación de expandir (3000 ms)
+  }
+});
+
+// Función para obtener el valor de una cookie
+function getCookie(name) {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].split("=");
+    if (cookie[0] === name) {
+      return cookie[1];
+    }
+  }
+  return null;
+}
+
+// Función para establecer una cookie
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
 // JS close boton
 const contactboton = document.querySelector('.contact-boton');
 const closeBoton = document.querySelector('.close-boton');
@@ -8,7 +54,7 @@ contactboton.style.display = 'none';
 
 closeBoton.addEventListener('click', hideContactBar);
 
-// prueba closeboton
+// JS Closeboton acomoda el contenido con la nueva navbar
 
 function eliminarBarra() {
   var barraSuperior = document.getElementById("barra-superior");
