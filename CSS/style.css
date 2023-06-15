@@ -280,6 +280,36 @@ nav {
     color: white;
 }
 
+/* Pop Up */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00C3DD;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: bajarYDesvanecer 3s forwards;
+}
+  
+@keyframes bajarYDesvanecer {
+    0% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+}
+  
 /* seccion de las cards de la ecommerce */
 .product-store {
     margin-top: 20px;

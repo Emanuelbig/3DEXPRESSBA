@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
 // JS close boton
 const contactboton = document.querySelector('.contact-boton');
 const closeBoton = document.querySelector('.close-boton');
@@ -109,42 +108,53 @@ function walletprendida() {
 //JS Comportamiento Heart
 
 function toggleHeartColor() {
-    const heart = document.getElementById('heart-icon');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor1() {
-    const heart = document.getElementById('heart-icon1');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor2() {
-    const heart = document.getElementById('heart-icon2');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor3() {
-    const heart = document.getElementById('heart-icon3');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor4() {
-    const heart = document.getElementById('heart-icon4');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor5() {
-    const heart = document.getElementById('heart-icon5');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor6() {
-    const heart = document.getElementById('heart-icon6');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor6() {
-    const heart = document.getElementById('heart-icon6');
-    heart.classList.toggle('active');
-  }
-  function toggleHeartColor7() {
-    const heart = document.getElementById('heart-icon7');
-    heart.classList.toggle('active');
-  }
+  const heart = document.getElementById('heart-icon');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor1() {
+  const heart = document.getElementById('heart-icon1');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor2() {
+  const heart = document.getElementById('heart-icon2');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor3() {
+  const heart = document.getElementById('heart-icon3');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor4() {
+  const heart = document.getElementById('heart-icon4');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor5() {
+  const heart = document.getElementById('heart-icon5');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor6() {
+  const heart = document.getElementById('heart-icon6');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor6() {
+  const heart = document.getElementById('heart-icon6');
+  heart.classList.toggle('active');
+}
+function toggleHeartColor7() {
+  const heart = document.getElementById('heart-icon7');
+  heart.classList.toggle('active');
+}
 
+// JS Pop Up
+
+function mostrarPopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'block';
+  popup.style.animation = 'bajarYDesvanecer 3s forwards';
+
+  setTimeout(() => {
+    popup.style.display = 'none';
+  }, 3000); // La window disappears en 3 s
+}
 
 //JS comportamiento video
 
