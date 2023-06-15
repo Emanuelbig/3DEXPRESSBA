@@ -554,6 +554,7 @@ label{
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
+    gap: 90px;
 }
 
 .servicetitled {
@@ -596,8 +597,10 @@ label{
 }
 
 .serviceimg {
-    width: 600px;
-    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 500px;
     font-size: 20px;
 }
 
@@ -955,7 +958,13 @@ li {
 
     .services2 {
         margin-bottom: 30px;
+        gap: 0px;
         
+    }
+
+    .serviceimg{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .howwedo {
