@@ -635,8 +635,9 @@ label{
     margin-top: 50px;
     margin-bottom: 40px;
     width: 500px;
-    height: 500px;
+    height: auto;
     font-size: 20px;
+    max-width: 100%;
 }
 
 .custom-margin-top {
@@ -1007,6 +1008,9 @@ li {
     .serviceimg{
         margin-top: 10px;
         margin-bottom: 10px;
+        max-height: 80%;
+        max-width: 80%;
+
     }
 
     .howwedo {
@@ -1252,7 +1256,8 @@ li {
     }
 
     .confidenceimg {
-        max-width: 65%;
+        max-width: 80%;
+        padding-top: 10px;
     }
 
     /* empresa page */
