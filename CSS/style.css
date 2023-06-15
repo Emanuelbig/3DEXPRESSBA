@@ -1202,6 +1202,17 @@ li {
         text-align: center;
     }
 
+    .confidencialsvg {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .confidenceimg {
+        max-width: 65%;
+    }
+
     /* empresa page */
 
     .confidencialidad {
