@@ -934,6 +934,11 @@ li {
 /* ------------------------- */
 
 @media (max-width: 720px) {
+    /* Preloader */
+    #pantalla-carga svg {
+        max-width: 60%;
+    }
+
     /* Nav */
     .close-boton {
         position: fixed;
