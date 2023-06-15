@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (!isPreloaderShown) {
     window.addEventListener("load", function () {
-      // Ocultar la pantalla de carga después de 5 segundos + duración de la animación de expandir
+      // Ocultar la pantalla de carga después de 4 segundos + duración de la animación de expandir
       setTimeout(function () {
         pantallaCarga.style.display = "none";
         contenido.style.visibility = "visible";
-      }, 8000); // 5 segundos (5000 ms) + duración de la animación de expandir (3000 ms)
+      }, 7000); // 4 segundos (4000 ms) + duración de la animación de expandir (3000 ms)
     });
     localStorage.setItem("isPreloaderShown", true);
   } else {

@@ -41,7 +41,7 @@
     height: 10px;
     background-color: hsl(216, 85%, 39%);
     animation: expandir 3s ease-in-out forwards;
-    animation-delay: 5s; /* Retraso de 5 segundos después de la animación principal */
+    animation-delay: 4s; /* Retraso de 4 segundos después de la animación principal */
 }
 
 @keyframes titilar {
